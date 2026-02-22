@@ -1,0 +1,3 @@
+- Make shorts from https://youtube.com/watch?v=abc123
+- Download only shorts to ~/studio-exports/shorts/
+- Use shorts-only preset with max 60s clips

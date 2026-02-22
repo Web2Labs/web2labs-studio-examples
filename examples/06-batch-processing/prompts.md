@@ -1,0 +1,3 @@
+- Process all videos in ~/recordings/ with youtube preset
+- Process latest 3 videos as podcast episodes
+- Download each project into its own folder

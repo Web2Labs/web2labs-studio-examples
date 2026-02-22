@@ -1,0 +1,3 @@
+- Edit ~/Desktop/my-recording.mp4
+- Clean up ~/Videos/stream.mp4 with the quick preset
+- Remove silences from ~/recording.mp4

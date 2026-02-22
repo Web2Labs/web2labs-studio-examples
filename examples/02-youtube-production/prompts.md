@@ -1,0 +1,3 @@
+- Edit ~/Desktop/episode.mp4 as a youtube video
+- Use youtube preset with subtitles and 3 shorts
+- Download everything to ~/studio-exports/youtube/

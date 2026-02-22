@@ -1,0 +1,3 @@
+- Edit ~/Videos/match.mp4 as gaming
+- Add dynamic zoom and split shorts
+- Download outputs to ~/studio-exports/gaming/

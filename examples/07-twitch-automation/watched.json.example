@@ -1,0 +1,10 @@
+{
+  "channels": {
+    "https://twitch.tv/my_channel": {
+      "processedVods": ["vod_123", "vod_124"],
+      "lastChecked": "2026-02-21T10:00:00.000Z",
+      "preset": "gaming",
+      "outputDir": "~/studio-exports/twitch/my_channel/"
+    }
+  }
+}

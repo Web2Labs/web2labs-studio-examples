@@ -1,0 +1,3 @@
+- Watch https://twitch.tv/my_channel/videos and process new VODs
+- Use gaming preset for all new VODs
+- Save outputs to ~/studio-exports/twitch/my_channel/

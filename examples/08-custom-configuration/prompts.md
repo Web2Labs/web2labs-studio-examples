@@ -1,0 +1,3 @@
+- Edit with youtube preset and override shorts amount to 5
+- Disable music while keeping subtitles and shorts
+- Apply custom zoomConfig for smoother camera motion

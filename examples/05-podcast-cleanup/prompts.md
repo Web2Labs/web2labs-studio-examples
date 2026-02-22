@@ -1,0 +1,3 @@
+- Clean up ~/Podcasts/episode.mp4 with podcast preset
+- Disable music and shorts
+- Keep subtitles on
