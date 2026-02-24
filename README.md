@@ -1,44 +1,63 @@
-# Web2Labs Studio x OpenClaw - Examples
+# Web2Labs Studio - OpenClaw Examples
 
-Copy-ready prompt workflows for the Web2Labs Studio OpenClaw skill.
+Copy-paste prompt workflows for the `@web2labs/studio` skill.
+Each example shows the exact prompts to use, what the agent does behind the scenes, and what you get back.
 
-## Quick Start
+## Install
 
-1. `clawhub install @web2labs/studio`
-2. `Set up Web2Labs with my email you@example.com`
-3. `Edit ~/Desktop/my-video.mp4 as a youtube video`
+```bash
+clawhub install @web2labs/studio
+```
+
+Then tell your AI assistant:
+
+```
+Set up Web2Labs with my email you@example.com
+```
+
+You get 2 free credits. No credit card required.
 
 ## Examples
 
-- [01 Basic Edit](examples/01-basic-edit/)
-- [02 YouTube Production](examples/02-youtube-production/)
-- [03 Shorts from URL](examples/03-shorts-from-url/)
-- [04 Gaming Montage](examples/04-gaming-montage/)
-- [05 Podcast Cleanup](examples/05-podcast-cleanup/)
-- [06 Batch Processing](examples/06-batch-processing/)
-- [07 Twitch Automation](examples/07-twitch-automation/)
-- [08 Custom Configuration](examples/08-custom-configuration/)
+| # | Workflow | Who It's For | Credits |
+|---|----------|-------------|---------|
+| [01](examples/01-basic-edit/) | **Basic Edit** | First-time users | 1 |
+| [02](examples/02-youtube-production/) | **YouTube Production** | YouTubers who want the full package | 1 + optional CC |
+| [03](examples/03-shorts-from-url/) | **Shorts from URL** | Social media managers, repurposers | 1 |
+| [04](examples/04-gaming-montage/) | **Gaming Montage** | Streamers, gamers | 1 |
+| [05](examples/05-podcast-cleanup/) | **Podcast Cleanup** | Podcasters, interviewers | 1 |
+| [06](examples/06-batch-processing/) | **Batch Processing** | Agencies, multi-video creators | N |
+| [07](examples/07-twitch-automation/) | **Twitch Automation** | Twitch streamers who want hands-off YouTube | 1/VOD |
+| [08](examples/08-custom-configuration/) | **Custom Configuration** | Power users who want full control | 1 |
+| [09](examples/09-brand-and-thumbnails/) | **Brand Kit + Thumbnails** | Creators building a consistent brand | CC |
+| [10](examples/10-webhook-automation/) | **Webhook Automation** | Developers, pipeline builders | 1 |
 
-## Rush Processing Tip
+**CC** = Creator Credits (separate from API credits; used for premium features like thumbnails)
 
-When the user is time-constrained, include `priority: "rush"` on upload.
-Rush processing costs 2 API credits instead of 1 and should be confirmed before running.
-If spend policy requires confirmation, run the upload with `confirm_spend: true` after user approval.
+## How to Read These Examples
 
-## Brand Consistency Tip
+Each example contains:
 
-Use `studio_brand` to set colors/identity once, then future thumbnails/subtitles inherit brand defaults.
+- **README.md** — What the workflow does, when to use it, and a full conversation showing exactly what you say and what the agent responds with
+- **prompts.md** — Standalone prompt variations you can copy-paste directly
 
-## Reusable Media Tip
+The conversation examples show realistic multi-turn interactions. Your actual output will vary based on your video content.
 
-Use `studio_assets` to upload reusable `intro`, `outro`, and `watermark` assets, then enable defaults with `studio_brand` for future projects.
+## Tips
 
-## Automation Tip (Webhooks)
+**Check credits first.** Say "How many credits do I have?" before starting. The agent calls `studio_credits` and tells you your balance.
 
-For fire-and-forget flows, pass `webhook_url` (and optional `webhook_secret`) on `studio_upload` and continue when your callback receives `project.completed`.
+**Use presets.** Instead of configuring everything manually, start with a preset (`youtube`, `quick`, `shorts-only`, `podcast`, `gaming`, `tutorial`, `vlog`, `cinematic`) and override what you need.
+
+**Estimate before large jobs.** Say "How much will this cost?" before batch processing. The agent calls `studio_estimate` and confirms before spending.
+
+**Set up your brand once.** Say "Import my brand from https://youtube.com/@mychannel" to auto-detect your colors and identity. Every future video inherits your brand.
+
+**Earn free credits.** Say "What's my referral code?" to get your link. Each friend who signs up gives you both 5 free credits.
 
 ## Links
 
-- https://clawhub.com/@web2labs/studio
-- https://web2labs.com/openclaw
-- https://web2labs.com/docs-api
+- [ClawHub Listing](https://clawhub.com/@web2labs/studio)
+- [Landing Page](https://web2labs.com/openclaw)
+- [API Docs](https://web2labs.com/api/v1/docs)
+- [Pricing](https://web2labs.com/pricing)
